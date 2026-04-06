@@ -1,23 +1,34 @@
 # System Architecture
 
-## Architecture Flow
-Frontend → Backend → Risk Engine → Database
+## Architecture Diagram
 
-## Components
+![Architecture Diagram](architecture-diagram.png)
 
-### Frontend
-- User interface for entering data and viewing results
+## Description
 
-### Backend
-- Processes input data and applies logic
+The system consists of the following components:
 
-### Risk Engine
-- Calculates flood risk based on rainfall and water level
+- Rainfall Data API and River Water Level Input provide real-time data
+- Backend Server handles incoming data
+- Data Processing module cleans and prepares data
+- Risk Prediction Engine calculates flood risk levels
 
-### Database
-- Stores historical flood data
+## Outputs
 
-## Users
-- Officer
-- Emergency Worker
-- Citizen
+- Alert System generates warnings
+- SMS Notifications send alerts to users
+- Emergency Dashboard helps authorities monitor situations
+- Evacuation Info supports safe movement of citizens
+
+## Data Storage
+
+- Database stores all data
+- Historical Data is used for future analysis
+
+## User Interface
+
+- Dashboard UI displays all information
+- Includes:
+  - Map Visualization
+  - Graphs
+  - Access for Authorities, Citizens, and Emergency Teams
